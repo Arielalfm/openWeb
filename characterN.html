@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Disney</title>
+     <link rel="stylesheet" href="characterNStyle.css">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&display=swap" rel="stylesheet">
+      <script src="characterNJS.js"></script>
+  </head>
+  <body>
+    <div class="dropdown">
+     <button class="dropbtn">Disney's Menu</button>
+     <div class="dropdown-content">
+       <a href="history.html"> Disney's History</a>
+       <a href ="movie.html"> Disney's Movies</a>
+       <a href="characterN.html">Disney's Characters</a>
+       <a href="recommend.html">Diseny's Movie Recommend</a>
+    </div>
+   </div>
+
+    <div class="headtxt">
+      <h1> Disney's
+      <br>&nbsp; &nbsp; &nbsp; &nbsp;캐릭터 소개</h1>
+    </div>
+
+    <div id="idx_container">
+      <div class="idxtxt"> Characters; </div>
+      <div class="tab">
+        <button class="tablinks.active" onclick="openTab(event,'tab1')"><strong>Belle</strong></button>
+        <button class="tablinks.active" onclick="openTab(event,'tab2')"><strong>Ariel</strong></button>
+        <button class="tablinks.active" onclick="openTab(event,'tab3')"><strong>Rapunzel</strong></button>
+        <button class="tablinks.active" onclick="openTab(event,'tab4')"><strong>Elsa, Anna</strong></button>
+        <button class="tablinks.active" onclick="openTab(event,'tab5')"><strong>Juddy</strong></button>
+      </div>
+    </div>
+
+    <div id="txt_container">
+      <div id="content_txt">
+        <div id="tab1" class="tabcontent" style="display:block;" >
+          <div id="txt"> <p>&nbsp; &nbsp; "Belle / 미녀와 야수"</p>
+          <br>영화 ''미녀와 야수'에 나오는 주인공
+          <br>작은 마을에 살지만 넓은 세계를 꿈꾸는 인물로
+          <br>아버지의 말이 그냥 돌아온 것을 보고 바로 달려나갈만큼 행동대장 성격이다.
+        </div>
+       <div id="img">
+            <img src="belle.png" style="width: 200px; height: 200px; padding-top:20px;"></img>
+        <!--    <img src="belleDress.png" style="padding-top:200px; width:200px; height:200px;" ></img>-->
+        </div>
+       </div>
+        <div id="tab2" class="tabcontent" style="display:none;">
+          <div id="txt"><p>&nbsp;  &nbsp; "Ariel / 언어공주""</p>
+            영화 '인어 공주'의 주인공.
+            <br> 목소리와 다리를 바꿔 물 밖으로 나가 자신이 구해준 왕자와 만난다.
+            <br>자칫 무모해 보일 수 있지만 믿을 만한 얼굴이 있으니 가능하지 않았을까
+            <br>그렇지만 여전히 목소리는 어깝다고 생각한다.
+            <br>영화 중 "part of your world"를 부르는 장면이 압권인데 말이다.
+            <br> 두번째 사진은 포크로 머리빗는 아리엘. 의외로 개그캐이다
+
+          </div>
+          <div id="img">
+            <img src="ariel.png" style="width: 200px; height: 150px; padding-top:20px; "></img>
+            <img src="arielFork.png" style="width: 200px; height: 200px; padding-top:180px;"></img>
+          </div>
+        </div>
+
+        <div id="tab3" class="tabcontent" style="display:none;">
+          <div id="txt"><p>&nbsp;  &nbsp; "Rapunzel / Tangled"</p>
+          디즈니의 현대 르네상스를 연 작품. 영화 '라푼젤'의 주인공. 치유의 힘이 있는 마법의 머리칼을 가지고 있다.
+          (어께에 있는 초록 친구는 카멜레온 파스칼. 라푼젤의 오랜 친구이다 )
+          <br>고전 동화인 라푼젤을 모티브로해 만들어졌다. 현대적 해석을 통해 직접 밖으로 나가기위해
+          계획을 짜는등 상당히 적극적 성격을 보여준다.
+          <br>영상미가 탁월한 영화 중 하나라고 생각한다.
+          <br>특히 영화의 하이라이트 장면인 "I see the light"에 나오는 풍등 장면은 진짜로 아름답다.
+          </div>
+          <div id="img">
+            <img src="rapun.png" style="width: 200px; height: 150px; padding-top:20px; "></img>
+            <img src="rapun2.png" style="width: 200px; height: 200px; padding-top:180px;"></img>
+          </div>
+
+        </div>
+        <div id="tab4" class="tabcontent" style="display:none">
+          <div id="txt"><p>&nbsp;"Elsa, Anna / Frozen"</p>
+            '겨울왕국'으로 2015년과 2020년 세계를 들었다 놨다한 자매이다.
+            <br>언니 엘사는 얼음 능력이 있다.
+            처음에는 얼음 능력을 부정적으로 보아 숨겼지만 자신의 일부로 인정하게 되었다.
+            <br>동생 안나는 평범한 인간이지만 결단력과 순발력은 어나더 레벨이다.
+            자신의 감정에 솔직하며 적극적이다.
+          </div>
+          <div id="img">
+            <img src="elsaanna.png" style="width: 230px; height: 150px; padding-top:5px; "></img>
+            <img src="elsa.png" style="width: 230px; height: 280px; padding-top:170px;"></img>
+            <img src="anna.png" style="width: 250px; height: 170px; padding-top:280px; left: 620px;" ></img>
+          </div>
+        </div>
+
+        <div id="tab5" class="tabcontent" style="display:none">
+          <div id="txt"><p>&nbsp;&nbsp; "Judy / Zootopia"</p>
+            <br>영화'주토피아'의 주인공.
+            <br>끊임 없는 노력으로 작은 초식 동물 최초로 경찰관이 되었다.
+            <br>여우 닉과 함께 육식 동물을 몰아내려고 계략을 세운 양으로부터 주토피아를 지켜냈다.
+            <br> 이후 닉도 경찰이 되어 함께 근무하고 하고있는데 빨리 결혼했으면 좋겠다.
+          </div>
+          <div id="img">
+            <img src="judy2.png"style="width: 250px; height: 230px; padding-top:20px; "></img>
+            <img src="judy.png" style="width: 270px; height: 190px; padding-top:250px; left: 870px;"></img>
+
+          </div>
+        </div>
+    </div>
+
+
+  </body>
+</html>
+
+<!--scroll 내리면 what i'll do  : 앞으로 하고싶은거 -->

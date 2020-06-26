@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Disney</title>
+    <link rel="stylesheet" href="recomStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&display=swap" rel="stylesheet">
+    <script src="recomJS.js"></script>
+  </head>
+  <body>
+    <div class="dropdown">
+     <button class="dropbtn">Disney's Menu</button>
+     <div class="dropdown-content">
+       <a href="history.html"> Disney's History</a>
+       <a href ="movie.html"> Disney's Movies</a>
+       <a href="characterN.html">Disney's Characters</a>
+       <a href="recommend.html">Diseny's Movie Recommend</a>
+    </div>
+  </div>
+
+    <div class="box">
+      <h2>Today's <br>&nbsp; &nbsp;Disney Movie</h2>
+      <button onclick="random_image()">오늘의 영화 추천</button>
+      <form  onload="drawImage()"style="float:right; padding-top:265px; margin-right:100px; padding-right:50px">
+      <select id="movies" onchange="drawImage()">
+      <option value="happy.png">기쁨
+      <option value="angry.png" selected>화남
+      <option value="boring.png"> 지루함
+      <option value="expect.png"> 설램
+      </select>
+      <img id="movieImg" src="happy.png" alt="">
+      </form>
+
+      <img id="img" src="recom1.png"></img>
+
+      <div id="test">"Disney is 뭔들"</div>
+    </div>
+
+  </body>
+
+</html>
